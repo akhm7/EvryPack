@@ -14,9 +14,7 @@
         <button class="border px-2 rounded-md" @click="incrementCount">
           +
         </button>
-        <button
-          @click="cartStore.addToCart(product.id, productCount)"
-        >
+        <button @click="cartStore.addToCart(product.id, productCount)">
           Add to cart
         </button>
       </div>

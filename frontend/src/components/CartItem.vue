@@ -1,7 +1,7 @@
 <template>
   <div class="flex gap-4 shadow-md rounded-md p-4">
     <div>
-      <img :src="product.img" alt="Fashion" class="h-44" />
+      <img :src="product.img" alt="Fashion" class="h-28" />
     </div>
     <div class="flex flex-col gap-4 flex-1">
       <p class="font-semibold">{{ product.name }}</p>
