@@ -1,8 +1,6 @@
-# EvryPack
+# EvryPack (e-commerce)
 
-# e-commerce
-
-This template should help get you started developing with Vue 3 in Vite.
+Service for regular delivery of goods to your home.
 
 ## Recommended IDE Setup
 
