@@ -5,7 +5,7 @@
     </div>
     <div class="flex flex-col gap-4 flex-1">
       <p class="font-semibold">{{ product.name }}</p>
-      <p><span class="text-orange-300">$</span> {{ product.price }}</p>
+      <p>{{ product.price }} <span class="text-orange-400">$/нед.</span></p>
       <div class="mt-auto flex gap-2 w-full">
         <button class="border px-2 rounded-md" @click="decrementCount">
           -

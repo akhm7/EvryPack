@@ -1,8 +1,10 @@
 import { defineStore } from "pinia";
 import { getProductInfo } from "@/api/db";
+import { list } from "postcss";
+
 export const useCartStore = defineStore("cart", {
   state: () => ({
-    cartItems: new Map(),
+    cartItems: new Map()
   }),
   actions: {
     addToCart(productId, productQuantity) {
@@ -23,6 +25,14 @@ export const useCartStore = defineStore("cart", {
     setProductQuantity(productId, productQuantity) {
       if (productQuantity < 0) return;
       this.cartItems.set(productId, productQuantity);
+    },
+
+    getCart() {
+      return new Map(this.cartItems);
+    },
+
+    cleanCart() {
+      this.cartItems = new Map();
     },
 
     removeFromCart() {},
